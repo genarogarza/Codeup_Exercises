@@ -10,7 +10,7 @@ if ($a < $b)
     // output the appropriate result
     echo "line " .__LINE__ . "> $a is less than $b\n";
 }
-ELSE 
+else 
 
     // output the appropriate result
 if ($b >$a)
@@ -27,7 +27,8 @@ if ($b >= $c)
     echo "line " .__LINE__ . "> $b is >= $c\n";
 }
 
-if ($b <= $c) {
+if ($b <= $c) 
+{
 
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is <= $c\n";
@@ -42,21 +43,25 @@ if ($b <= $c) {
 // combine the next 4 conditionals into 
 // one if/else/elseif block that checks in order for:
 // identical, equal, not identical, not equal
-if ($b == $c) {
+if ($b == $c) 
+{
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is equal to $c\n";
 } 
-elseif ($b === $c) {
+elseif ($b === $c) 
+{
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is identical to $c\n";
 }
 
-elseif ($b != $c) {
+elseif ($b != $c) 
+{
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is not equal to $c\n";
 } 
 
-elseif ($b !== $c) {
+elseif ($b !== $c) 
+{
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is not identical to $c\n";
 }
