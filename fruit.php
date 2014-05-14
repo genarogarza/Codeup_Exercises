@@ -1,7 +1,7 @@
 <?php
 
 
-//homework 1 FOR
+// homework 1 FOR
 // $fruits = ['apple','orange','banana'];
 
 
@@ -25,7 +25,7 @@
 
 //------------------------------------------
 
-// homework 2
+// homework 2 my way
 
 $fruits = [
     ['name' => 'apple','color' => 'red'],
@@ -37,3 +37,16 @@ foreach ($fruits as $fruit) {
     echo $fruit['name'] . "s are " . $fruit['color'] . PHP_EOL;
 
 }
+
+//   teachers way
+
+$fruits = [
+    'apples' => 'red'.
+    'oranges' => 'orange',
+    'bananas' => 'yellow'
+];
+
+foreach ($$fruits as $fruit => $color) {
+    echo "{$fruits are {$color}\n";
+}
+
