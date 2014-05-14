@@ -10,10 +10,10 @@ if ($a < $b)
     // output the appropriate result
     echo "line " .__LINE__ . "> $a is less than $b\n";
 }
-else 
+else if
 
     // output the appropriate result
-if ($b >$a)
+($b >$a)
 {
     echo "line " .__LINE__ . "> $b is greater than $a\n";
 }
@@ -53,13 +53,11 @@ elseif ($b === $c)
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is identical to $c\n";
 }
-
 elseif ($b != $c) 
 {
     // output the appropriate result
     echo "line " .__LINE__ . "> $b is not equal to $c\n";
 } 
-
 elseif ($b !== $c) 
 {
     // output the appropriate result
