@@ -48,7 +48,7 @@ if ($day_of_week == 1) {
 } 	elseif ($day_of_week == 2) {
 		echo "today is Tuesday\n";
 }	elseif ($day_of_week == 3){
-		echo "today is Wendsday\n";
+		echo "today is Wendesday\n";
 }	elseif ($day_of_week == 3){
 		echo "today is Thursday\n";
 }	elseif ($day_of_week == 3){

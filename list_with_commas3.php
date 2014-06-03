@@ -1,24 +1,24 @@
 <?php
 
 // Converts string into array 
-function humanized_list($string) 
+function humanized_list($x_physicists_string) 
 {
-  		$physicists_array = explode(", ", $string);
+  		$physicists_array = explode(", ", $x_physicists_string);
 
   		//sort naturally
-		sort($physicists_array);
+		sort($x_physicists_array);
 
 		//pop and save to var
-		$lastitem = array_pop($physicists_array);
+		$x_lastitem = array_pop($x_physicists_array);
 
 		//then push 'add'
-		array_push($physicists_array, "and ");
+		array_push($x_physicists_array, "and ");
 
 		//then add popped item back
-		array_push($physicists_array, $lastitem);
+		array_push($x_physicists_array, $x_lastitem);
 
 		//return value
-		return $physicists_array;
+		return $x_physicists_array;
 }
 
 // List of famous peeps

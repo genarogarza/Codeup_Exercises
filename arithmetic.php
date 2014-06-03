@@ -3,66 +3,84 @@
 
 
 function test($a, $b) {
-	if (!is_numeric($a)) {
-		echo "ERROR: {$a} should be a number" . PHP_EOL;
-
-	} elseif (!is_numeric($b)) {
-		echo "ERROR: {$b} should be a number" . PHP_EOL;
-
-	} else {
+	if (is_numeric($a) && is_numeric($b)) { 
 		return true;
+	} else {
+		return false;
 	}
-	
 }
+
 
 
 function add($a, $b) {
 	if (test($a, $b)) {
-		echo $a + $b . PHP_EOL;
-	}
+		$testresult =  $a + $b . PHP_EOL;
+		} 
 }
-function subtract($a, $b) {
-	if(test($a, $b)){
-		echo $a - $b . PHP_EOL;
-	}
-}
-
-function multiply($a, $b) {
-	if(test($a, $b)){
-		echo $a * $b . PHP_EOL;
-	}
-}
-
-function divide($a, $b) {
-	if(test($a, $b)){
-		if ($b !== 0) {
-			echo $a / $b . PHP_EOL;
-		} else {
-			echo 'ERROR : division by zero' . PHP_EOL;
-		}
-	} 
-
-}
-
-function modulus($a, $b) {
-	if(test($a, $b)){
-		if ($b !== 0) {
-			echo $a / $b . PHP_EOL;
-		}
-	} else {
-		echo 'ERROR : division by zero' . PHP_EOL;
-	}
-}
+echo $testresult;
 
 
-add("a20",20);       //outputs 40
-subtract(20,20);  //outputs 0
-multiply("a20",20);  //outputs 400
-divide(20,0);    //outputs 1
-modulus(20,20)	  //outputs 1
+echo add(20, 20) . PHP_EOL;
 
 
 
+
+
+
+
+
+
+
+
+// function subtract($a, $b) {
+// 	if(test($a, $b)){
+// 		echo $a - $b . PHP_EOL;
+// 	}
+// }
+
+// function multiply($a, $b) {
+// 	if(test($a, $b)){
+// 		echo $a * $b . PHP_EOL;
+// 	}
+// }
+
+// function divide($a, $b) {
+// 	if(test($a, $b)){
+// 		if ($b !== 0) {
+// 			echo $a / $b . PHP_EOL;
+// 		} else {
+// 			echo 'ERROR : division by zero' . PHP_EOL;
+// 		}
+// 	} 
+
+// }
+
+// function modulus($a, $b) {
+// 	if(test($a, $b)){
+// 		if ($b !== 0) {
+// 			echo $a / $b . PHP_EOL;
+// 		}
+// 	} else {
+// 		echo 'ERROR : division by zero' . PHP_EOL;
+// 	}
+// }
+
+
+echo add(20,20);       //outputs 40
+// subtract(20,20);  //outputs 0
+// multiply("a20",20);  //outputs 400
+// divide(20,0);    //outputs 1
+// modulus(20,20)	  //outputs 1
+
+
+
+
+
+
+
+
+
+//                  class examples
 //--------------------------------------------
 // function compare($a, $b, $strict = true)      //defaults $strict to true
 // {

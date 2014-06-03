@@ -1,0 +1,48 @@
+<?php>
+
+function alphabet_soup($x_str){
+$array = explode(' ', $x_str);
+print_r($array);
+
+
+
+}
+
+//--------------------------------------
+function get_input($upper = FALSE) 
+{
+    // Return filtered STDIN input
+    $result = trim(fgets(STDIN));
+    
+    if ($upper) 
+    {
+        return strtoupper($result);
+    } 
+
+      else 
+
+      {
+        return $result;
+      }
+}
+
+
+
+
+
+
+//>>>>>>>>>CODE STARTS HERE  <<<<<<<<<<<<<<<<
+
+//get users input
+$str = get_input(false)
+
+alphabet_soup($str);
+// convert to array with ' ' delimiter
+
+// sort each element with sort function
+
+
+// merge each element back into one string
+
+echo "string";
+

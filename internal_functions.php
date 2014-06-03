@@ -15,12 +15,6 @@ function test($x){
 	} 	
 }
 
-
-
-
-
-
-
 // TEST: If var $nothing is set, display '$nothing is SET'
 // TEST: If var $nothing is empty, display '$nothing is EMPTY'
 

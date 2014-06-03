@@ -1,5 +1,5 @@
 <?php
-
+/// using arguments
 
 // error if not at least two arguments
 if ($argc < 3) {
@@ -10,10 +10,10 @@ if ($argc < 3) {
 // incrmentor entered??
 // user selected increment
 // Default increment to 0 if no input
-if ($argc < 4){
-	$increment = 1;
+if ($argc < 3){
+	$increment = '1';
 }  else {
-	$increment = $argv[3];
+	$increment = $argv[2];
 }
 
 // non numeric test
@@ -28,11 +28,14 @@ if (!(is_numeric($argv[1]))) {
 	exit(1);
 }
 
-
 // operation
-for($x = $argv[1];$x <= $argv[2]; $x = ($x + $increment)) {
+for($x = $argv[1];$x <= $argv[2]; $x = ($x += $increment)) {
 
 	echo "{$x}\n";
 }
+
+
+
+///  using fwrite/fgets
 
 
