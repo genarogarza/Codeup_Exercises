@@ -29,11 +29,28 @@ function get_input($upper = FALSE)
       }
 }
 //-----------------------------------------
-function UniqueRandomNumbersWithinRange($min, $max, $quantity) 
+function random($quantity) 
 {
-    $numbers = range($min, $max);
-    shuffle($numbers);
-    return array_slice($numbers, 0, $quantity);
+	$numbers = range(1, 6);
+    $array = [];
+    for ($i=0; $i < $quantity; $i++) 
+    { 
+    	shuffle($numbers);
+    	$array[] = $numbers;
+    	
+
+
+
+    	
+    }
+
+    return ($array);
+
+
+    //return array_slice($numbers, 0, $quantity);
+// $generated
+
+
 }
 
 // >>>>>>>>>CODE STARTS HERE<<<<<<<<<<<<<<
@@ -56,12 +73,17 @@ foreach($array as $arr){
 
 //get input - how many words to generate
 echo "how many words do you want to use?\n";
-$number_words = get_input(false);
+$quantity = get_input(false);
+
+
+$results = random($quantity);
 
 
 
-$numbers = range(1, 6);
-shuffle($numbers);
+
+
+print_r($results);
+//print_r($output);
 
 
 

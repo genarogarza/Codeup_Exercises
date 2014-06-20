@@ -1,16 +1,21 @@
 <?php
 
-function UniqueRandomNumbersWithinRange($min, $max, $quantity) 
-{
-    $numbers = range($min, $max);
-    shuffle($numbers);
-    return array_slice($numbers, 0, $quantity);
-}
 
+
+//$result = [];
 $numbers = range(1, 6);
-shuffle($numbers);
+$result = shuffle($numbers);
 
-echo "$numbers";
+
+echo "numbers" . PHP_EOL;
+print_r($numbers);
+echo "results" . PHP_EOL;
+print_r($result);
+
+// $result = [];
+
+
+// $string = implode("", $numbers);
 
 
 
